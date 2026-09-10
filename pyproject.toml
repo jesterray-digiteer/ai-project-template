@@ -1,0 +1,22 @@
+[project]
+name = "fastapi-template"
+version = "0.1.0"
+description = "Digiteer FastAPI + Celery template for new AI projects"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "fastapi",
+    "uvicorn",
+    "celery",
+    "redis",
+    "pydantic",
+    "pydantic-settings",
+    "python-dotenv",
+    "python-multipart",
+]
+
+[dependency-groups]
+dev = [
+    "pytest",
+    "pytest-asyncio",
+]
